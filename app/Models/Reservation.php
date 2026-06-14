@@ -28,6 +28,11 @@ class Reservation extends Model
         'updated_at',
     ];
 
+    protected $casts = [
+        'check_in' => 'date',
+        'check_out' => 'date',
+    ];
+
     protected $dispatchesEvents = [
         'created' => ReservationCreated::class,
         'updated' => ReservationUpdated::class,

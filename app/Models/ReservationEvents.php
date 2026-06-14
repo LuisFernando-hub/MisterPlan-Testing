@@ -11,7 +11,6 @@ class ReservationEvents extends Model
     /** @use HasFactory<\Database\Factories\ReservationEventsFactory> */
     use HasFactory;
 
-protected $table = 'reservations_events';
     protected $fillable = [
         "reservation_id",
         "type",
